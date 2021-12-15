@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27AEDC41-5295-4563-AEB4-B79C5615E93D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentManagementSystem2</RootNamespace>
+    <AssemblyName>StudentManagementSystem2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Frameworks\Guna.UI2.WinForms.2.0.1.9\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RegDep\lecgrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\lecgrid.Designer.cs">
+      <DependentUpon>lecgrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegDep\lecregform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\lecregform.Designer.cs">
+      <DependentUpon>lecregform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\addbooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\addbooks.Designer.cs">
+      <DependentUpon>addbooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbcon.cs" />
+    <Compile Include="ExamDep\addresults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamDep\addresults.Designer.cs">
+      <DependentUpon>addresults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin access.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\admin access.Designer.cs">
+      <DependentUpon>admin access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminaccexamdep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminaccexamdep.Designer.cs">
+      <DependentUpon>adminaccexamdep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminacclibry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminacclibry.Designer.cs">
+      <DependentUpon>adminacclibry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminaccparties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminaccparties.Designer.cs">
+      <DependentUpon>adminaccparties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminaccregdep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminaccregdep.Designer.cs">
+      <DependentUpon>adminaccregdep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITDiv\itdiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ITDiv\itdiv.Designer.cs">
+      <DependentUpon>itdiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\libry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\libry.Designer.cs">
+      <DependentUpon>libry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\adminlogin.Designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamDep\allexamresults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamDep\allexamresults.Designer.cs">
+      <DependentUpon>allexamresults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamDep\examform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamDep\examform.Designer.cs">
+      <DependentUpon>examform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\examlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\examlogin.Designer.cs">
+      <DependentUpon>examlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\itdivlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\itdivlogin.Designer.cs">
+      <DependentUpon>itdivlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegDep\sturegform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\sturegform.Designer.cs">
+      <DependentUpon>sturegform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\librylogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\librylogin.Designer.cs">
+      <DependentUpon>librylogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\partieslogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\partieslogin.Designer.cs">
+      <DependentUpon>partieslogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Logins\regdeplogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\regdeplogin.Designer.cs">
+      <DependentUpon>regdeplogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\studentlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\studentlogin.Designer.cs">
+      <DependentUpon>studentlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegDep\studentreg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\studentreg.Designer.cs">
+      <DependentUpon>studentreg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\stulibryreg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\stulibryreg.Designer.cs">
+      <DependentUpon>stulibryreg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegDep\subassing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\subassing.Designer.cs">
+      <DependentUpon>subassing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegDep\subjectregform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\subjectregform.Designer.cs">
+      <DependentUpon>subjectregform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamDep\subview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamDep\subview.Designer.cs">
+      <DependentUpon>subview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITDiv\studentpwds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ITDiv\studentpwds.Designer.cs">
+      <DependentUpon>studentpwds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegDep\studentgrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\studentgrid.Designer.cs">
+      <DependentUpon>studentgrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegDep\subassinggrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\subassinggrid.Designer.cs">
+      <DependentUpon>subassinggrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegDep\subgrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegDep\subgrid.Designer.cs">
+      <DependentUpon>subgrid.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegDep\lecgrid.resx">
+      <DependentUpon>lecgrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegDep\lecregform.resx">
+      <DependentUpon>lecregform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\addbooks.resx">
+      <DependentUpon>addbooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamDep\addresults.resx">
+      <DependentUpon>addresults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\admin access.resx">
+      <DependentUpon>admin access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminaccexamdep.resx">
+      <DependentUpon>adminaccexamdep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminacclibry.resx">
+      <DependentUpon>adminacclibry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminaccparties.resx">
+      <DependentUpon>adminaccparties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminaccregdep.resx">
+      <DependentUpon>adminaccregdep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITDiv\itdiv.resx">
+      <DependentUpon>itdiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\libry.resx">
+      <DependentUpon>libry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamDep\allexamresults.resx">
+      <DependentUpon>allexamresults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamDep\examform.resx">
+      <DependentUpon>examform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\examlogin.resx">
+      <DependentUpon>examlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\itdivlogin.resx">
+      <DependentUpon>itdivlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegDep\sturegform.resx">
+      <DependentUpon>sturegform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\librylogin.resx">
+      <DependentUpon>librylogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\partieslogin.resx">
+      <DependentUpon>partieslogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Logins\regdeplogin.resx">
+      <DependentUpon>regdeplogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\studentlogin.resx">
+      <DependentUpon>studentlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegDep\studentreg.resx">
+      <DependentUpon>studentreg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\stulibryreg.resx">
+      <DependentUpon>stulibryreg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegDep\subassing.resx">
+      <DependentUpon>subassing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegDep\subjectregform.resx">
+      <DependentUpon>subjectregform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamDep\subview.resx">
+      <DependentUpon>subview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITDiv\studentpwds.resx">
+      <DependentUpon>studentpwds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegDep\studentgrid.resx">
+      <DependentUpon>studentgrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegDep\subassinggrid.resx">
+      <DependentUpon>subassinggrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegDep\subgrid.resx">
+      <DependentUpon>subgrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

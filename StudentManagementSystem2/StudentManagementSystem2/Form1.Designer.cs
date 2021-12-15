@@ -45,7 +45,7 @@
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(478, 182);
+            this.guna2Button7.Location = new System.Drawing.Point(480, 182);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
             this.guna2Button7.Size = new System.Drawing.Size(180, 155);
@@ -61,7 +61,7 @@
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(292, 182);
+            this.guna2Button6.Location = new System.Drawing.Point(294, 182);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
             this.guna2Button6.Size = new System.Drawing.Size(180, 155);
@@ -77,7 +77,7 @@
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(106, 182);
+            this.guna2Button5.Location = new System.Drawing.Point(108, 182);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(180, 155);
@@ -93,7 +93,7 @@
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(574, 16);
+            this.guna2Button4.Location = new System.Drawing.Point(202, 16);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(180, 155);
@@ -109,7 +109,7 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(388, 16);
+            this.guna2Button3.Location = new System.Drawing.Point(574, 16);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(180, 155);
@@ -125,7 +125,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(202, 16);
+            this.guna2Button2.Location = new System.Drawing.Point(16, 16);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(180, 155);
@@ -141,7 +141,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(16, 16);
+            this.guna2Button1.Location = new System.Drawing.Point(388, 16);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(180, 155);
