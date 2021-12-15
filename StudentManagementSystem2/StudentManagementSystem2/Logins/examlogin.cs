@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace StudentManagementSystem2
+{
+    public partial class examlogin : Form
+    {
+        public examlogin()
+        {
+            InitializeComponent();
+        }
+
+        private void loginbtn_Click(object sender, EventArgs e)
+        {
+            if (userid.Text == "vishwa" && password.Text == "vishwa")
+            {
+                examform obj = new examform();
+                this.Hide();
+                obj.Show();
+            }
+        }
+    }
+}
